@@ -1,0 +1,22 @@
+{
+  "name": "webshop-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass sass/style.scss css/output.css",
+    "watch:sass": "sass sass/style.scss css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.72.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
