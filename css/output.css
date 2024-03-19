@@ -13,7 +13,8 @@ header img {
   padding-top: 2px;
   padding-bottom: 2px;
   top: 7px;
-  position: fixed;
+  padding: 0%;
+  margin-top: 5px;
 }
 header nav {
   height: 100%;
@@ -42,6 +43,158 @@ header a:after {
   height: 2px;
   width: 100%;
   background-color: #fff;
+}
+
+section.hero {
+  position: relative;
+}
+section.hero span {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-weight: 500;
+  font-size: 80px;
+}
+section.hero video {
+  width: 100%;
+}
+section.hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0%;
+  left: 0%;
+}
+section.hero .overlay h1 {
+  text-align: center;
+  margin-top: 250px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-weight: 300;
+  font-size: 80px;
+  letter-spacing: 7px;
+}
+section.hero .overlay p {
+  text-align: center;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+section.gaming-gear {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section.gaming-gear h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+section.gaming-gear .popular-products {
+  display: flex;
+  justify-content: space-evenly;
+}
+section.gaming-gear .popular-products h4 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+}
+section.gaming-gear .popular-products .product img:hover {
+  margin-top: -30px;
+  transition: 0.3s;
+}
+
+section.last-chance {
+  padding-top: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+section.last-chance .item {
+  background-color: white;
+}
+section.last-chance .item img {
+  width: 700px;
+  height: 400px;
+}
+section.last-chance .item span {
+  font-weight: 500;
+}
+section.last-chance .item h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 40px;
+}
+section.last-chance .item p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+section.posters {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.posters .right {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.posters .right .poster {
+  position: relative;
+}
+section.posters .right .poster .description-2 {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  color: white;
+}
+section.posters .right .poster .description-3 {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+}
+section.posters .left {
+  position: relative;
+}
+section.posters .left .description {
+  position: absolute;
+  bottom: 70px;
+  left: 50px;
+  color: white;
+}
+section.posters img {
+  margin: 15px;
+  border-radius: 20px;
+}
+
+.learn-more {
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
 }
 
 /*# sourceMappingURL=output.css.map */

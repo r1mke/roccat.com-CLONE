@@ -1,0 +1,33 @@
+section.gaming-gear{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    h1{
+        text-align: center;
+        font-family: $roboto;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .popular-products{
+        display: flex;
+        justify-content: space-evenly;
+
+        h4{
+            text-align: center;
+            color: white;
+            font-weight: 400;
+        }
+
+       .product{
+
+        img:hover{
+            margin-top: -30px;
+            transition: 0.3s;
+        }
+       }
+    }
+}

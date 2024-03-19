@@ -1,0 +1,51 @@
+section.posters{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    .right{
+        
+        display: flex;
+        flex-wrap: wrap;
+        
+        .poster{
+            position: relative;
+            .description-2{
+            position: absolute;
+            bottom: 30px;
+            left: 50px;
+            color: white;
+            }
+
+            .description-3{
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            color: white;
+            }
+        }
+       
+    }
+
+    .left{
+        position: relative;
+        .description{
+        position: absolute;
+        bottom: 70px;
+        left: 50px;
+        color: white;
+        }
+    }
+
+
+
+    img{
+        margin: 15px;
+        border-radius: 20px;
+        
+    }
+}
