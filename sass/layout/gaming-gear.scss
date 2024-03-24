@@ -16,6 +16,11 @@ section.gaming-gear{
         display: flex;
         justify-content: space-evenly;
 
+        @media (max-width: 1000px){
+            align-items: center;
+            flex-direction: column
+        }
+
         h4{
             text-align: center;
             color: white;
@@ -24,9 +29,23 @@ section.gaming-gear{
 
        .product{
 
+        img{
+            width: 240px;
+            height: 190px;
+
+            @media (max-width: $xl){
+                width: 190px;
+                height: 140px;
+            }
+        }
+
         img:hover{
             margin-top: -30px;
             transition: 0.3s;
+
+            @media (max-width: $xl){
+                margin: 0;
+            }
         }
        }
     }

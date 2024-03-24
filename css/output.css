@@ -6,6 +6,16 @@
 
 header {
   background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+@media (max-width: 1199px) {
+  header {
+    display: none;
+  }
 }
 header img {
   width: 192px;
@@ -46,7 +56,12 @@ header a:after {
 }
 
 section.hero {
+  background-image: url(/img/hero-image.jpg);
   position: relative;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
 }
 section.hero span {
   background-color: rgba(0, 0, 0, 0);
@@ -54,8 +69,19 @@ section.hero span {
   font-weight: 500;
   font-size: 80px;
 }
-section.hero video {
-  width: 100%;
+@media (max-width: 1000px) {
+  section.hero span {
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 60px;
+  }
+}
+@media (max-width: 575px) {
+  section.hero span {
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 30px;
+  }
 }
 section.hero .overlay {
   position: absolute;
@@ -74,6 +100,20 @@ section.hero .overlay h1 {
   font-size: 80px;
   letter-spacing: 7px;
 }
+@media (max-width: 1000px) {
+  section.hero .overlay h1 {
+    margin-top: 100px;
+    font-weight: 200;
+    font-size: 60px;
+  }
+}
+@media (max-width: 1000px) {
+  section.hero .overlay h1 {
+    margin-top: 100px;
+    font-weight: 200;
+    font-size: 30px;
+  }
+}
 section.hero .overlay p {
   text-align: center;
   width: 70%;
@@ -84,6 +124,13 @@ section.hero .overlay p {
   margin-top: 50px;
   font-size: 25px;
   font-weight: 400;
+}
+@media (max-width: 1000px) {
+  section.hero .overlay p {
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 20px;
+  }
 }
 
 section.gaming-gear {
@@ -103,14 +150,35 @@ section.gaming-gear .popular-products {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 1000px) {
+  section.gaming-gear .popular-products {
+    align-items: center;
+    flex-direction: column;
+  }
+}
 section.gaming-gear .popular-products h4 {
   text-align: center;
   color: white;
   font-weight: 400;
 }
+section.gaming-gear .popular-products .product img {
+  width: 240px;
+  height: 190px;
+}
+@media (max-width: 1199px) {
+  section.gaming-gear .popular-products .product img {
+    width: 190px;
+    height: 140px;
+  }
+}
 section.gaming-gear .popular-products .product img:hover {
   margin-top: -30px;
   transition: 0.3s;
+}
+@media (max-width: 1199px) {
+  section.gaming-gear .popular-products .product img:hover {
+    margin: 0;
+  }
 }
 
 section.last-chance {
@@ -119,12 +187,48 @@ section.last-chance {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 1000px) {
+  section.last-chance {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 section.last-chance .item {
   background-color: white;
 }
 section.last-chance .item img {
   width: 700px;
   height: 400px;
+}
+@media (max-width: 1400px) {
+  section.last-chance .item img {
+    width: 600px;
+  }
+}
+@media (max-width: 1199px) {
+  section.last-chance .item img {
+    width: 500px;
+  }
+}
+@media (max-width: 1000px) {
+  section.last-chance .item img {
+    width: 700px;
+  }
+}
+@media (max-width: 715px) {
+  section.last-chance .item img {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  section.last-chance .item img {
+    width: 450px;
+  }
+}
+@media (max-width: 450px) {
+  section.last-chance .item img {
+    width: 400px;
+  }
 }
 section.last-chance .item span {
   font-weight: 500;
@@ -142,16 +246,57 @@ section.last-chance .item p {
 }
 
 section.posters {
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1000px) {
+  section.posters {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 section.posters .right {
-  display: flex;
-  flex-wrap: wrap;
+  width: 720px;
+}
+@media (max-width: 715px) {
+  section.posters .right img {
+    width: 500px;
+    padding: 10px;
+  }
+}
+@media (max-width: 500px) {
+  section.posters .right img {
+    width: 450px;
+    padding: 10px;
+  }
+}
+@media (max-width: 450px) {
+  section.posters .right img {
+    width: 400px;
+    padding: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  section.posters .right {
+    width: 90%;
+  }
+}
+@media (max-width: 715px) {
+  section.posters .right {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  section.posters .right {
+    width: 450px;
+  }
+}
+@media (max-width: 450px) {
+  section.posters .right {
+    width: 400px;
+  }
 }
 section.posters .right .poster {
   position: relative;
@@ -169,7 +314,28 @@ section.posters .right .poster .description-3 {
   color: white;
 }
 section.posters .left {
+  width: 720px;
   position: relative;
+}
+@media (max-width: 715px) {
+  section.posters .left {
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  section.posters .left {
+    width: 450px;
+    padding: 10px;
+  }
+}
+@media (max-width: 450px) {
+  section.posters .left {
+    width: 400px;
+    padding: 10px;
+  }
 }
 section.posters .left .description {
   position: absolute;
@@ -178,8 +344,241 @@ section.posters .left .description {
   color: white;
 }
 section.posters img {
-  margin: 15px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 40px;
+}
+@media (max-width: 715px) {
+  section.posters img {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  section.posters img {
+    width: 450px;
+  }
+}
+@media (max-width: 450px) {
+  section.posters img {
+    width: 400px;
+  }
+}
+
+section.review {
+  text-align: center;
+  color: white;
+  background-image: url(/img/review-bg.jpg);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section.review .content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+  section.review .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+section.review .content .review-text {
+  padding: 90px;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  background-color: white;
+  color: black;
   border-radius: 20px;
+  height: 50%;
+}
+@media (max-width: 1024px) {
+  section.review .content .review-text {
+    font-size: 15px;
+    padding: 60px;
+  }
+}
+@media (max-width: 550px) {
+  section.review .content .review-text {
+    font-size: 15px;
+    padding: 30px;
+  }
+}
+@media (max-width: 450px) {
+  section.review .content .review-text {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+section.review .content .review-text p {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+section.review .content .review-text button {
+  padding: 5px;
+  border-radius: 10px;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+}
+section.review .content img {
+  width: 615px;
+  height: 505px;
+}
+@media (max-width: 1024px) {
+  section.review .content img {
+    width: 400px;
+    height: 405px;
+  }
+}
+
+section.newsletter {
+  background-color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+}
+@media (max-width: 1000px) {
+  section.newsletter {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  section.newsletter {
+    padding: 10px;
+  }
+}
+section.newsletter img {
+  width: 192px;
+  height: 192px;
+  margin-right: 50px;
+}
+section.newsletter .join-our {
+  width: 40%;
+}
+@media (max-width: 1000px) {
+  section.newsletter .join-our {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+section.newsletter .join-our ul {
+  padding: 0%;
+}
+section.newsletter .join-our ul li {
+  display: inline-block;
+  margin-left: 1px;
+  width: 30px;
+}
+section.newsletter .join-our ul li img {
+  width: 20px;
+  height: 20px;
+}
+section.newsletter .get-off {
+  width: 40%;
+}
+@media (max-width: 1000px) {
+  section.newsletter .get-off {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+    text-align: left;
+  }
+}
+section.newsletter .get-off .input {
+  display: flex;
+}
+@media (max-width: 1000px) {
+  section.newsletter .get-off .input {
+    flex-direction: column;
+  }
+}
+section.newsletter .get-off .input .left {
+  width: 80%;
+}
+section.newsletter .get-off .input .left input {
+  width: 90%;
+  padding: 5px;
+}
+section.newsletter .get-off .input .right {
+  margin-top: 25;
+}
+section.newsletter .get-off .input .right button {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+}
+@media (max-width: 1000px) {
+  section.newsletter .get-off .input .right button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+footer {
+  padding-top: 50px;
+}
+@media (max-width: 1000px) {
+  footer {
+    padding: 10px;
+  }
+}
+footer p {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+@media (max-width: 1000px) {
+  footer p {
+    margin: 0%;
+  }
+}
+footer .container {
+  justify-content: space-between;
+  display: flex;
+}
+@media (max-width: 1000px) {
+  footer .container {
+    display: none;
+  }
+}
+footer .container .col {
+  max-width: fit-content;
+}
+footer .container .col p {
+  color: white;
+  font-weight: 400;
+}
+footer .container .col ul {
+  width: 30%;
+  list-style: none;
+  padding: 0%;
+}
+footer .container .col ul li {
+  margin-bottom: 10px;
+}
+footer .container .col ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+  font-size: 14px;
 }
 
 .learn-more {

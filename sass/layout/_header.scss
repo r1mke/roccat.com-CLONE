@@ -1,6 +1,14 @@
 header{
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 
+    @media (max-width: 1199px){
+        display: none;
+    }
     img{
         width: 192px;
         height: 45px;
@@ -14,6 +22,7 @@ header{
     nav{
         height: 100%;
         padding-top: 20px;
+        
     }
     ul{
         list-style: none;
